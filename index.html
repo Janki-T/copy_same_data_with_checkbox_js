@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_with_same_address_and_data_onclick</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        label {
+            font-size: 20px;
+            color: rgb(247, 46, 10);
+        }
+
+        input {
+            margin-bottom: 20px;
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form">
+            <label>First Name</label>
+            <br>
+            <input type="text" id="f_name" placeholder="First Name" required>
+            <input type="text" id="copy_f_name" placeholder="First Name" required disabled>
+            <br>
+            <label>Last Name</label>
+            <br>
+            <input type="text" id="l_name" placeholder="Last name" required>
+            <input type="text" id="copy_l_name" placeholder="Last name" required disabled>
+            <br>
+            <label>Email</label>
+            <br>
+            <input type="email" id="email" placeholder="@Email" required>
+            <input type="email" id="copy_email" placeholder="@Email" required disabled>
+            <br>
+            <label>Phone-Number</label>
+            <br>
+            <input type="phone" id="phone_n" placeholder="Phone-Number" required>
+            <input type="phone" id="copy_phone_n" placeholder="Phone-Number" required disabled>
+            <br>
+            <label>City</label>
+            <br>
+            <input type="text" id="city" placeholder="City" required>
+            <input type="text" id="copy_city" placeholder="City" required disabled>
+            <br>
+            <label>Plz Select to Copy Same Details</label>
+            <input type="checkbox" id="chech_box" onclick="copy_data()" required>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
